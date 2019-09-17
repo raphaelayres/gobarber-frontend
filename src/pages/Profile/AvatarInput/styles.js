@@ -6,7 +6,9 @@ export const Container = styled.div`
 
   label {
     cursor: pointer;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -14,12 +16,13 @@ export const Container = styled.div`
     border: 3px solid rgba(255, 255, 255, 0.3);
     background: #eee;
     text-align: center;
+
     &:hover {
       opacity: 0.7;
     }
 
     img {
-      width: 100%;
+      width: auto;
       height: 100%;
       object-fit: cover;
     }

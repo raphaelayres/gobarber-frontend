@@ -17,8 +17,6 @@ export function* updateProfile({ payload }) {
 
     toast.success("Perfil atualizado com sucesso!");
 
-    console.log("aki", response.data);
-
     yield put(updateProfileSuccess(response.data));
   } catch (error) {
     yield put(updateProfileFailer());

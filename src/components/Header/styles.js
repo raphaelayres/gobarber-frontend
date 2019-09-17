@@ -16,6 +16,7 @@ export const Content = styled.div`
   nav {
     display: flex;
     align-items: center;
+
     img {
       margin-right: 20px;
       padding-right: 20px;
@@ -55,8 +56,18 @@ export const Profile = styled.div`
       margin-top: 2px;
     }
   }
-  img {
+  .box-img {
+    width: 40px;
     height: 40px;
+    overflow: hidden;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
   }
 `;
